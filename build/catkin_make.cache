@@ -1,0 +1,2 @@
+learning_communication
+-DCATKIN_DEVEL_PREFIX=/home/felix/ros-learning/devel -DCMAKE_INSTALL_PREFIX=/home/felix/ros-learning/install -G Unix Makefiles
