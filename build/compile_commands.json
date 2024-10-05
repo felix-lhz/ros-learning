@@ -38,5 +38,15 @@
   "directory": "/home/felix/ros-learning/build/learning_communication",
   "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/learning_communication/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/talker_node.dir/src/talker.cpp.o -c /home/felix/ros-learning/src/learning_communication/src/talker.cpp",
   "file": "/home/felix/ros-learning/src/learning_communication/src/talker.cpp"
+},
+{
+  "directory": "/home/felix/ros-learning/build/learning_tf",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_tf\\\" -I/home/felix/ros-learning/src/learning_tf/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/turtle_tf_listener.dir/src/turtle_tf_listener.cpp.o -c /home/felix/ros-learning/src/learning_tf/src/turtle_tf_listener.cpp",
+  "file": "/home/felix/ros-learning/src/learning_tf/src/turtle_tf_listener.cpp"
+},
+{
+  "directory": "/home/felix/ros-learning/build/learning_tf",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_tf\\\" -I/home/felix/ros-learning/src/learning_tf/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/turtle_tf_broadcaster.dir/src/turtle_tf_broadcaster.cpp.o -c /home/felix/ros-learning/src/learning_tf/src/turtle_tf_broadcaster.cpp",
+  "file": "/home/felix/ros-learning/src/learning_tf/src/turtle_tf_broadcaster.cpp"
 }
 ]

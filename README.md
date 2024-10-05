@@ -211,3 +211,75 @@ rosrun learning_communication client 3 5
 
 
 
+## 3 ROS中的常用组件
+
+### 3.1 launch启动文件
+
+```launch文件属性设置
+# 常用属性
+pkg：节点所在的功能包的名称	
+name：节点名称
+type：节点的可执行文件名称
+
+# Others
+output = "screen":将节点的标准输出打印到终端屏幕，默认输出为日志文档
+respawn = "true":复位属性，该节点停止时，会自动重启，默认为false
+required = "true":必要节点，该节点终止时，launch文件中的其他节点也被终止
+ns = "namespace":命名空间，为节点内的相对名称添加命名空间前缀
+args = "arguments":节点需要的输入参数
+```
+
+```launch文件参数设置
+<param> 
+<arg>
+<remap>:重映射指令话题
+<include>:嵌套服用，
+```
+
+### 4.2 TF坐标变换
+
+坐标系变换：平移+旋转，4×4矩阵（齐次矩阵）
+
+#### 4.2.1 TF工具
+
+##### 4.2.1.1 tf_monitor
+
+打印TF树中所有坐标系的发布状态。
+
+```
+查看指定坐标系之间的发布状态
+th_echo <source_frame> <target_frame>
+```
+
+##### 4.2.1.2 tf_echo
+
+查看指定坐标系之间的坐标系变化。
+
+```
+th_echo <source_frame> <target_frame>
+```
+
+##### 4.2.1.3 static_transform_publisher
+
+发布两个坐标系之间的静态坐标变换，这两个坐标系不发生相对位置变化
+
+```
+# yaw:围绕z轴的偏航角，pitch:围绕y轴旋转的俯仰角，roll:围绕x轴旋转的翻滚角
+static_transform_publisher x y z yaw pitch roll frame_id child_frame_id 
+# 四元数
+static_transform_publisher x y z qx qy qz qw frame_id child_frame_id 
+```
+
+##### 4.2.1.4 view_frames
+
+可视化的调试工具，可以生成pdf文件，显示整棵TF树的信息。
+
+#### 4.2.2 turtle_tf
+
+[turtle_tf_broadcaster.cpp](./src/learning_tf/src/turtle_tf_broadcaster.cpp)
+
+[turtle_tf_listener.cpp](src/learning_tf/src/turtle_tf_listener.cpp)
+
+[start_demo_with_listener.launch](src/learning_tf/launch/start_demo_with_listener.launch)
+
+!!! 修改CMakeList.txt and package.xml
