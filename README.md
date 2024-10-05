@@ -1,5 +1,14 @@
 # Ros-Learning（WSL2+Ubuntu20.04）
+
+
+
 ##  1.准备工作（Preparation）
+
+###### Books
+
+[ROS机器人开发实践 (机器人设计与制作系列)【文字版】 (胡春旭)](./PDF/ROS机器人开发实践 (机器人设计与制作系列)【文字版】 (胡春旭).pdf)
+
+[ROS机器人开发：实用案例分析（原书第2版）](./PDF/ROS机器人开发：实用案例分析（原书第2版）.pdf)
 
 ### 1.1 基本系统组件安装（Basic System Component Installation）
 
@@ -65,7 +74,7 @@ WSL2安装locate命令一直显示Initializing mlocate database; this may take s
 ##### 1.2.1.3 环境变量配置
 
 ```source
-echo "source/ros-learning/devel/setup.bash">>~/.bashrc
+echo "source ~/ros-learning/devel/setup.bash">>~/.bashrc
 ```
 
 #### 1.2.2 功能包配置（package config）
@@ -75,5 +84,49 @@ cd ~/ros-learning/src
 catkin_create_pkg learning_communication std_msgs rospy roscpp
 cd ..
 catkin_make
+```
+
+### 1.3 Vscode+ROS配置
+
+[【ROS】VSCODE + ROS 配置方法（保姆级教程，总结了多篇）_vscode ros-CSDN博客](https://blog.csdn.net/g944468183/article/details/123759886#:~:text=使用VScode搭建)
+
+## 2.ROS基础（ROS Basics）
+
+### 2.1 话题中的Publisher与Subscriber（Publisher And Subscriber In Topic）
+
+#### 2.1.1 创建Publisher（Create Publisher）
+
+[talker.cpp](./src/learning_communication/src/talk.cpp)
+
+#### 2.1.2 创建Subscriber（Create Subscriber）
+
+[listener.cpp](./src/learning_communication/src/listener.cpp)
+
+#### 2.1.3 CMakeList.txt
+
+``` CMakeList.txt
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(talker_node src/talker.cpp)
+add_executable(listener_node src/listener.cpp)
+
+add_dependencies(talker_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(listener_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+target_link_libraries(talker_node
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(listener_node
+  ${catkin_LIBRARIES}
+)
+```
+
+#### 2.1.4 运行Publisher和Subscriber
+
+```Run
+catkin_make
+roscore
+rosrun learning_communication talker_node
+rosrun learning_communication listener_node
 ```
 
