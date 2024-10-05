@@ -21,12 +21,22 @@
 },
 {
   "directory": "/home/felix/ros-learning/build/learning_communication",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/felix/ros-learning/src/learning_communication/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/listener_node.dir/src/listener.cpp.o -c /home/felix/ros-learning/src/learning_communication/src/listener.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/learning_communication/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/client.dir/src/client.cpp.o -c /home/felix/ros-learning/src/learning_communication/src/client.cpp",
+  "file": "/home/felix/ros-learning/src/learning_communication/src/client.cpp"
+},
+{
+  "directory": "/home/felix/ros-learning/build/learning_communication",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/learning_communication/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/listener_node.dir/src/listener.cpp.o -c /home/felix/ros-learning/src/learning_communication/src/listener.cpp",
   "file": "/home/felix/ros-learning/src/learning_communication/src/listener.cpp"
 },
 {
   "directory": "/home/felix/ros-learning/build/learning_communication",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/felix/ros-learning/src/learning_communication/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/talker_node.dir/src/talker.cpp.o -c /home/felix/ros-learning/src/learning_communication/src/talker.cpp",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/learning_communication/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/server.dir/src/server.cpp.o -c /home/felix/ros-learning/src/learning_communication/src/server.cpp",
+  "file": "/home/felix/ros-learning/src/learning_communication/src/server.cpp"
+},
+{
+  "directory": "/home/felix/ros-learning/build/learning_communication",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"learning_communication\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/learning_communication/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -o CMakeFiles/talker_node.dir/src/talker.cpp.o -c /home/felix/ros-learning/src/learning_communication/src/talker.cpp",
   "file": "/home/felix/ros-learning/src/learning_communication/src/talker.cpp"
 }
 ]

@@ -6,9 +6,7 @@
 
 ###### Books
 
-[ROS机器人开发实践 (机器人设计与制作系列)【文字版】 (胡春旭)](./PDF/ROS机器人开发实践 (机器人设计与制作系列)【文字版】 (胡春旭).pdf)
-
-[ROS机器人开发：实用案例分析（原书第2版）](./PDF/ROS机器人开发：实用案例分析（原书第2版）.pdf)
+[Books/Ros Leanring at main · felix-lhz/Books (github.com)](https://github.com/felix-lhz/Books/tree/main/Ros Leanring)
 
 ### 1.1 基本系统组件安装（Basic System Component Installation）
 
@@ -96,7 +94,7 @@ catkin_make
 
 #### 2.1.1 创建Publisher（Create Publisher）
 
-[talker.cpp](./src/learning_communication/src/talk.cpp)
+[talker.cpp](./src/learning_communication/src/talker.cpp)
 
 #### 2.1.2 创建Subscriber（Create Subscriber）
 
@@ -129,4 +127,87 @@ roscore
 rosrun learning_communication talker_node
 rosrun learning_communication listener_node
 ```
+
+#### 2.1.5 自定义消息包（msg）
+
+[Person.msg](./src/learning_communication/msg/Person.msg)
+
+###### 编译消息包（build msg）
+
+```package.xml
+<build_depend>message_generation</build_depend>
+<exec_depend>message_runtime</exec_depend>
+```
+
+```CMakeList.txt
+find_package(catkin REQUIRED COMPONENTS
+  ......
+  message_generation
+)
+catkin_package(
+......
+ CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs message_runtime
+......
+)
+add_message_files(
+  FILES
+  Person.msg
+)
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+)
+```
+
+###### 查看消息包（check msg）
+
+```terminal
+rosmsg show Person
+```
+
+### 2.2 服务中的Server和Client（Server and Client in Service）
+
+#### 2.2.1 定义服务数据（Defining Service Data）
+
+[addTwoInts.srv](./src/learning_communication/srv/addTwoInts.srv)
+
+```CMakeList.txt
+# 其他配置已在2.1.5完成
+add_service_files(
+  FILES
+  addTwoInts.srv
+)
+```
+
+#### 2.2.2 Server and Client
+
+[server.cpp](./src/learning_communication/src/server.cpp)
+
+[client.cpp](./src/learning_communication/src/client.cpp)
+
+```CMakeList.txt
+add_executable(server src/server.cpp)
+add_executable(client src/client.cpp)
+
+add_dependencies(server ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(client ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+target_link_libraries(server
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(client
+  ${catkin_LIBRARIES}
+)
+```
+
+#### 2.2.3 运行Server和Client
+
+```terminal
+catkin_make
+roscore
+rosrun learning_communication server
+rosrun learning_communication client 3 5
+```
+
+
 
