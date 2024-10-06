@@ -236,13 +236,13 @@ args = "arguments":节点需要的输入参数
 <include>:嵌套服用，
 ```
 
-### 4.2 TF坐标变换
+### 3.2 TF坐标变换
 
 坐标系变换：平移+旋转，4×4矩阵（齐次矩阵）
 
-#### 4.2.1 TF工具
+#### 3.2.1 TF工具
 
-##### 4.2.1.1 tf_monitor
+##### 3.2.1.1 tf_monitor
 
 打印TF树中所有坐标系的发布状态。
 
@@ -251,7 +251,7 @@ args = "arguments":节点需要的输入参数
 th_echo <source_frame> <target_frame>
 ```
 
-##### 4.2.1.2 tf_echo
+##### 3.2.1.2 tf_echo
 
 查看指定坐标系之间的坐标系变化。
 
@@ -259,7 +259,7 @@ th_echo <source_frame> <target_frame>
 th_echo <source_frame> <target_frame>
 ```
 
-##### 4.2.1.3 static_transform_publisher
+##### 3.2.1.3 static_transform_publisher
 
 发布两个坐标系之间的静态坐标变换，这两个坐标系不发生相对位置变化
 
@@ -270,11 +270,11 @@ static_transform_publisher x y z yaw pitch roll frame_id child_frame_id
 static_transform_publisher x y z qx qy qz qw frame_id child_frame_id 
 ```
 
-##### 4.2.1.4 view_frames
+##### 3.2.1.4 view_frames
 
 可视化的调试工具，可以生成pdf文件，显示整棵TF树的信息。
 
-#### 4.2.2 turtle_tf
+#### 3.2.2 turtle_tf
 
 [turtle_tf_broadcaster.cpp](./src/learning_tf/src/turtle_tf_broadcaster.cpp)
 
@@ -283,3 +283,90 @@ static_transform_publisher x y z qx qy qz qw frame_id child_frame_id
 [start_demo_with_listener.launch](src/learning_tf/launch/start_demo_with_listener.launch)
 
 !!! 修改CMakeList.txt and package.xml
+
+### 3.3 QT工具箱
+
+```
+rqt_console:图像化显示和过滤ros系统运行状态中的所有日志消息，包括info/warn/error等级别的日志
+rqt_graph:图形化显示当前ros系统中的计算图（节点之间的话题通讯）
+rqt_plot:将需要显示的数据在xy坐标系中使用曲线描绘
+rqt_reconfigure:ros系统的动态参数配置（rosrun rqt_reconfigure rqt_reconfigure）
+```
+
+### 3.4 rviz
+
+#### 3.4.1 rviz主界面
+
+![](./img/rviz.png)
+
+- 0:3D视图区，用于显示可视化数据
+- 1:工具栏，用于提供视角控制/目标控制/发布地点等工具
+- 2:显示项列表，用于显示当前选择的显示插件，可以配置每个插件的属性
+- 3:视角设置区，用于选择多种观测视角
+- 4:时间显示区，用于显示当前的系统时间和ROS时间
+
+#### 3.4.2 rviz 插件（rviz plugins）
+
+|      插件名       |                          描述                          |                         消息类型                         |
+| :---------------: | :----------------------------------------------------: | :------------------------------------------------------: |
+|       Axes        |                       显示坐标轴                       |                            -                             |
+|      Effort       |                 显示机器人转动关节的力                 |                 sensor_msgs/JointStates                  |
+|      Camera       |             打开一个新窗口并显示摄像头图像             |       sensor_msgs/Image     sensor_msgs/CameraInfo       |
+|       Grid        |                    显示2D或者3D栅格                    |                                                          |
+|    Grid Cells     |        显示导航功能包中代价地图的障碍物栅格信息        |                    nav_msgs/GridCells                    |
+|       Image       | 打开一个窗口并显示图像信息（不需要订阅摄像头校准信息） |                    sensor_msgs/Image                     |
+| InteractiveMarker |                    显示3D交互式标记                    |           visualization_msgs/InteractiveMarker           |
+|    Laser Scan     |                    显示激光雷达数据                    |                  sensor_msgs/LaserScan                   |
+|        Map        |                在大地平面上显示地图信息                |                  nav_msgs/OccupancyGrid                  |
+|      Markers      |           绘制各种基本形状（箭头/立方体等）            | visualization_msgs/Marker visualization_msgs/MarkerArray |
+|       Path        |                显示导航过程中的路径信息                |                      nav_msgs/Path                       |
+|       Point       |                  使用圆球体绘制一个点                  |                geometry_msgs/PointStamped                |
+|       Pose        |          使用箭头或者坐标轴的方式绘制一个位姿          |                geometry_msgs/PoseStamped                 |
+|    Pose Array     |             根据位姿列表，绘制一组位姿箭头             |                 geometry_msgs/PoseArray                  |
+|  Point Cloud(2)   |                      显示点云数据                      |      sensor_msgs/PointCloud sensor_msgs/PointCloud2      |
+|      Polygon      |                     绘制多边形轮廓                     |                  geometry_msgs/Polygon                   |
+|     Odometry      |             绘制一段时间内的里程计位姿信息             |                    nav_msgs/Odometry                     |
+|       Range       |    显示声纳或者红外传感器反馈的测量数据（锥形范围）    |                    sensor_msgs/Range                     |
+|        TF         |                  显示TF变换的层次关系                  |                                                          |
+|    RobotModel     |                     显示机器人模型                     |                                                          |
+|      Wrench       |     显示力信息（力用箭头表示，转矩用箭头和园表示）     |               geometry_msgs/WrenchStamped                |
+
+### 3.5 Gazebo仿真环境（Gazebo Simulation）
+
+#### 3.5.1 Gazebo 特点
+
+- **动力学仿真**：支持多种高性能的物理引擎
+- **三维可视化环境**：支持显示逼真的三位环境，包括光线/纹理/影子
+- **传感器仿真**：支持传感器数据的仿真，同时可以仿真传感器噪声
+- **可扩展插件**：用户可以定制化开发插件以扩展Gazebo的功能，满足个性化的需求
+- **多种机器人模型**：官方提供PR2/Pioneer2 DX/TurtleBot等机器人模型，也可使用自己创建的机器人模型
+- **TCP/IP传输**：Gazebo的后台仿真处理和前台图形显示可以通过网络通信实现远程仿真
+- **云仿真**：Gazebo仿真可以在Amazon/Softlayer等云端运行，也可以在自己搭建的云服务器上运行
+- **终端工具**：用户可以使用Gazebo提供的命令行工具在终端实现仿真控制
+
+#### 3.5.2 Gazebo Models
+
+```
+cd .gazebo/
+git clone https://github.com/osrf/gazebo_models
+sudo apt-get update
+mv gazebo_models models
+```
+
+### 3.6 rosbag
+
+###### 记录数据
+
+```
+mkdir ~/bagfiles
+cd ~/bagfiles
+rosbag record -a
+```
+
+###### 回放数据
+
+```
+rosbag info <your bagfile>
+rosbag play <your bagfile>
+```
+
