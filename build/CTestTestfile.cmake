@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("learning_communication")
 subdirs("learning_tf")
+subdirs("mrobot_description")

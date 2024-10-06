@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/felix/ros-learning/build
 include learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_addTwoInts.dir/progress.make
 
 learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_addTwoInts:
-	cd /home/felix/ros-learning/build/learning_communication && ../catkin_generated/env_cached.sh /home/felix/miniconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py learning_communication /home/felix/ros-learning/src/learning_communication/srv/addTwoInts.srv 
+	cd /home/felix/ros-learning/build/learning_communication && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py learning_communication /home/felix/ros-learning/src/learning_communication/srv/addTwoInts.srv 
 
 _learning_communication_generate_messages_check_deps_addTwoInts: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_addTwoInts
 _learning_communication_generate_messages_check_deps_addTwoInts: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_addTwoInts.dir/build.make

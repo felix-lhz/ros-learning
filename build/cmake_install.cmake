@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "RelWithDebInfo")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/felix/ros-learning/build/gtest/cmake_install.cmake")
   include("/home/felix/ros-learning/build/learning_communication/cmake_install.cmake")
   include("/home/felix/ros-learning/build/learning_tf/cmake_install.cmake")
+  include("/home/felix/ros-learning/build/mrobot_description/cmake_install.cmake")
 
 endif()
 

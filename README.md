@@ -370,3 +370,80 @@ rosbag info <your bagfile>
 rosbag play <your bagfile>
 ```
 
+## 4 机器人建模与仿真
+
+### 4.1 统一机器人描述格式——URDF
+
+#### 4.1.1 **<link>**标签
+
+**<link>**标签用于描述机器人某个刚体部分的外观和物理属性，包括**size**/**color**/**shape**/**inertial** **matrix**/**collision properties**
+
+#### 4.1.2 **<joint>**标签
+
+**<joint>标签**用于描述机器人关节的运动学和动力学属性，包括关节运动的位置和速度限制。
+
+|  关节类型  |                     描述                     |
+| :--------: | :------------------------------------------: |
+| continuous |        旋转关节，可以围绕单轴无限旋转        |
+|  revolute  |        转动关节，可以围绕单轴有限旋转        |
+| prismatic  | 滑动关节，沿某一轴线移动的关节，带有位置极限 |
+|   planar   |  平面关节，允许在平面正交方向上平移或者旋转  |
+|  floating  |       浮动关节，允许进行平移/旋转运动        |
+|   fixed    |         固定关节，不允许运动的特殊关         |
+
+- <calibration>:关节的参考位置，用来校准关节的绝对位置
+- <dynamics>:用于描述关节的物理属性，如阻尼值/物理静摩擦力等
+- <limit>:用于描述运动的一些极限值，包括关节运动的上下限位置、速度限制、力矩限制等
+- <mimic>:用于描述该关节与已有关节的关系
+- <safety_controller>:用于描述安全控制器参数
+
+#### 4.1.3 <robot>标签
+
+<robot>是完整机器人模型的最顶层标签，<link>和<joint>标签必须包含在<robot>标签内。
+
+#### 4.1.4 <gazebo>标签
+
+<gazebo>标签用于描述机器人模型在**Gazebo**中仿真所需要的参数，包括机器人材料的属性、**Gazebo**插件等。（只有在**Gazebo**仿真时才需加入）
+
+### 4.2 创建机器人URDF模型
+
+#### 4.2.1 创建机器人描述功能包
+
+```
+cd ~/ros-learning/src
+catkin_create_pkg mrobot_description urdf xacro
+```
+
+###### mrobot_description功能包中包含以下4个文件夹：
+
+- **urdf**：用于存放机器人模型的URDF或xacro文件
+- **meshes**：用于放置**URDF**中引用的模型渲染文件
+- **launch**：用于保存相关启动文件
+- **config**：用于保存**rviz**的配置文件
+
+#### 4.2.2 创建URDF模型
+
+该机器人底盘模型包含7个link和6个joint（model中只有6个link和5个joint）：
+
+- **link**：1个机器人底板、2个电机、2个驱动轮、2个万向轮
+- **joint**：电机、驱动轮、万向轮和底板的连接
+
+[mrobot_chassis.urdf](src/mrobot_description/urdf/mrobot_chassis.urdf)
+
+###### check_urdf
+
+- 解析**URDF**文件，并显示解析过程中发现的错误。
+
+```
+check_urdf mrobot_chassis.urdf
+```
+
+###### urdf_to_graphiz
+
+- 生成模型的整体结构图PDF文件
+
+```
+urdf_to_graphiz mrobot_chassis.urdf
+```
+
+[mrobot_chassis.pdf](src/mrobot_description/urdf/mrobot_chassis.pdf)

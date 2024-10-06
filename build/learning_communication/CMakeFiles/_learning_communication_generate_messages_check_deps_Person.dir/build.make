@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/felix/ros-learning/build
 include learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/progress.make
 
 learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person:
-	cd /home/felix/ros-learning/build/learning_communication && ../catkin_generated/env_cached.sh /home/felix/miniconda3/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py learning_communication /home/felix/ros-learning/src/learning_communication/msg/Person.msg 
+	cd /home/felix/ros-learning/build/learning_communication && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py learning_communication /home/felix/ros-learning/src/learning_communication/msg/Person.msg 
 
 _learning_communication_generate_messages_check_deps_Person: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person
 _learning_communication_generate_messages_check_deps_Person: learning_communication/CMakeFiles/_learning_communication_generate_messages_check_deps_Person.dir/build.make
