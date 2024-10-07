@@ -24,9 +24,9 @@
 
 ###### pytorch安装
 
-[使用 WSL 运行 Linux GUI 应用 | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/wsl/tutorials/gui-apps)
+[PyTorch](https://pytorch.org/)
 
-###### miniconda安装
+###### miniconda安装（后续使用中出现python路径冲突问题，建议暂不安装）
 
 [Miniconda — Anaconda documentation](https://docs.anaconda.com/miniconda/)
 
@@ -447,3 +447,16 @@ urdf_to_graphiz mrobot_chassis.urdf
 ```
 
 [mrobot_chassis.pdf](src/mrobot_description/urdf/mrobot_chassis.pdf)
+
+###### 在rviz中显示模型
+
+[mrobot_chassis.rviz](src/mrobot_description/config/mrobot_chassis.rviz)
+
+[display_mrobot_chassis_urdf.launch](src/mrobot_description/launch/display_mrobot_chassis_urdf.launch)
+
+```
+roslaunch mrobot_description display_mrobot_chassis_urdf.launch
+```
+
+
+
