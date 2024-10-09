@@ -69,7 +69,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        left_motor_link:
+        left_motor:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -84,7 +84,7 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        right_motor_link:
+        right_motor:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -109,13 +109,13 @@ Visualization Manager:
           Value: true
         front_castor_link:
           Value: true
-        left_motor_link:
+        left_motor:
           Value: true
         left_wheel_link:
           Value: true
         rear_castor_link:
           Value: true
-        right_motor_link:
+        right_motor:
           Value: true
         right_wheel_link:
           Value: true
@@ -128,12 +128,12 @@ Visualization Manager:
         base_link:
           front_castor_link:
             {}
-          left_motor_link:
+          left_motor:
             left_wheel_link:
               {}
           rear_castor_link:
             {}
-          right_motor_link:
+          right_motor:
             right_wheel_link:
               {}
       Update Interval: 0

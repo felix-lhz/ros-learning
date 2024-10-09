@@ -458,5 +458,39 @@ urdf_to_graphiz mrobot_chassis.urdf
 roslaunch mrobot_description display_mrobot_chassis_urdf.launch
 ```
 
+#### 4.2.3 优化URDF模型
 
+### 4.3 使用xacro优化URDF
+
+###### 使用声明
+
+```
+<?xml version="1.0"?>
+<robot name="robot_name" xmlns:xacro="https://www.ros.org/wiki/xacro>"
+```
+
+#### 4.3.1 使用常量定义（coast）
+
+```example
+<xacro:property name="M_PI" value="3.1415926535"/>
+<origin xyz="0 0 0" rpy="${M_PI/2} 0 0"/>
+```
+
+#### 4.3.2 调用数学公式（math）
+
+```
+<origin xyz="0 ${(motor_length + wheel_length)/2} 0" rpy="0 0 0"/>
+```
+
+#### 4.3.3 宏定义
+
+```example
+<xacro:macro name="mrobot_standoff_2in" params="parent number x_loc y_loc z_loc">
+·····
+</xacro>
+```
+
+```
+<mrobot_standoff_2in parent="base_link" number="4" x_loc="${standoff_x/2}" y_loc="${standoff_y/2}" z_loc="${standoff_z/2}"/>
+```
 
