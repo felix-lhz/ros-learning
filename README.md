@@ -494,3 +494,44 @@ roslaunch mrobot_description display_mrobot_chassis_urdf.launch
 <mrobot_standoff_2in parent="base_link" number="4" x_loc="${standoff_x/2}" y_loc="${standoff_y/2}" z_loc="${standoff_z/2}"/>
 ```
 
+### 4.4 xacro文件
+
+[mrobot_body.urdf.xacro](src/mrobot_description/urdf/mrobot_body.urdf.xacro)
+
+[mrobot.urdf.xacro](src/mrobot_description/urdf/mrobot.urdf.xacro)
+
+#### 4.4.1 将xacro文件转换为URDF文件
+
+```
+cd ~/ros-learning/src/mrobot_description/urdf
+rosrun xacro xacro mrobot.urdf.xacro > mrobot.urdf
+```
+
+#### 4.4.2 直接调用xacro文件解析器
+
+可以省略手动转换模型的过程，直接在启动文件中调用xacro解析器，自动将xacro转换成URDF文件。
+
+```
+<arg name="model" default="$(find xacro)/xacro --inorder '$(find mrobot_description)/urdf/mrobot.urdf.xacro'" />
+<arg name="gui" default="true" />
+<param name="robot_description" command="$(arg model)" />
+```
+
+[display_mrobot.launch](src/mrobot_description/launch/display_mrobot.launch)
+
+```
+roslaunch mrobot_description display_mrobot.launch
+```
+
+### 4.5 添加传感器
+
+#### 4.5.1 摄像头
+
+[camera.xacro](src/mrobot_description/urdf/camera.xacro)
+
+[mrobot_with_camera.urdf.xacro](src/mrobot_description/urdf/mrobot_with_camera.urdf.xacro)
+
+[display_mrobot_with_camera.launch](src/mrobot_description/launch/display_mrobot_with_camera.launch)
+
+#### 4.5.2 Kinect(RGB-D摄像头)
+
