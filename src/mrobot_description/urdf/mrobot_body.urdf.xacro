@@ -156,7 +156,7 @@
             </collision>
         </link>
 
-        <joint name="left_wheel_joint" type="continuous">
+        <joint name="base_l_wheel_joint" type="continuous">
             <origin xyz="0 ${(motor_length+wheel_length)/2} 0" rpy="0 0 0"/>
             <parent link="left_motor"/>
             <child link="left_wheel_link"/>
@@ -217,7 +217,7 @@
             </collision>
         </link>
 
-        <joint name="right_wheel_joint" type="continuous">
+        <joint name="base_r_wheel_joint" type="continuous">
             <origin xyz="0 ${-(motor_length+wheel_length)/2} 0" rpy="0 0 0"/>
             <parent link="right_motor"/>
             <child link="right_wheel_link"/>

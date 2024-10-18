@@ -1,6 +1,5 @@
 <launch>
-
-	<arg name="model" default="$(find xacro)/xacro --inorder '$(find mrobot_description)/urdf/mrobot_with_kinect.urdf.xacro'" />
+	<arg name="model" default="$(find xacro)/xacro '$(find mrobot_description)/urdf/mrobot_with_rplidar.urdf.xacro'" />
 	<arg name="gui" default="true" />
 
 	<param name="robot_description" command="$(arg model)" />

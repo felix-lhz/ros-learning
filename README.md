@@ -2,11 +2,13 @@
 
 
 
-##  1.准备工作（Preparation）
+##  1.references
 
 ###### Books
 
 [Books/Ros Leanring at main · felix-lhz/Books (github.com)](https://github.com/felix-lhz/Books/tree/main/Ros Leanring)
+
+https://github.com/huchunxu/ros_exploring.git
 
 ### 1.1 基本系统组件安装（Basic System Component Installation）
 
@@ -534,4 +536,38 @@ roslaunch mrobot_description display_mrobot.launch
 [display_mrobot_with_camera.launch](src/mrobot_description/launch/display_mrobot_with_camera.launch)
 
 #### 4.5.2 Kinect(RGB-D摄像头)
+
+[kinect.xacro](src/mrobot_description/urdf/kinect.xacro)
+
+[mrobot_with_kinect.urdf.xacro](src/mrobot_description/urdf/mrobot_with_kinect.urdf.xacro)
+
+[display_mrobot_with_kinect.launch](src/mrobot_description/launch/display_mrobot_with_kinect.launch)
+
+#### 4.5.3 Rplidar
+
+[rplidar.xacro](src/mrobot_description/urdf/rplidar.xacro)
+
+[mrobot_with_rplidar.urdf.xacro](src/mrobot_description/urdf/mrobot_with_rplidar.urdf.xacro)
+
+[display_mrobot_with_laser.launch](src/mrobot_description/launch/display_mrobot_with_laser.launch)
+
+### 4.6 ArbotiX
+
+#### 4.6.1 安装ArbotiX
+
+```
+sudo apt-get install ros-noetic-arbotix
+```
+
+```
+git clone https://github.com/vanadiumlabs/arbotix_ros.git
+cd arbotix_ros
+catkin_make
+```
+
+#### 4.6.2 配置ArbotiX控制器
+
+
+
+
 
