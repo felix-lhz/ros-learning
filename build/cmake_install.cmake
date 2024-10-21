@@ -131,8 +131,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/felix/ros-learning/build/gtest/cmake_install.cmake")
+  include("/home/felix/ros-learning/build/ar_track_alvar/ar_track_alvar_msgs/cmake_install.cmake")
   include("/home/felix/ros-learning/build/learning_communication/cmake_install.cmake")
+  include("/home/felix/ros-learning/build/robot_vision/cmake_install.cmake")
   include("/home/felix/ros-learning/build/learning_tf/cmake_install.cmake")
+  include("/home/felix/ros-learning/build/ar_track_alvar/ar_track_alvar/cmake_install.cmake")
   include("/home/felix/ros-learning/build/mrobot_description/cmake_install.cmake")
 
 endif()

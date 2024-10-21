@@ -765,5 +765,31 @@ add LaserScan
 Topic:/scan
 ```
 
-## 5 机器视觉（machine vision）
+## 5 机器视觉（robot vision）
 
+### 5.1 摄像头标定（需要实际摄像头）
+
+#### 5.1.1 camera_calibration功能包
+
+```
+roslaunch usb_cam usb_cam-test.launch
+```
+
+无freenect_launch package
+
+### 5.2 二维码识别
+
+#### 5.2.1 安装ar_track_alvar功能包
+
+```
+cd ~/ros-learning/src
+git clone git@github.com:machinekoder/ar_track_alvar.git -b noetic-devel
+cd ..
+catkin_make
+```
+
+#### 5.2.2 创建二维码
+
+## 6 机器语音（robot voice)
+
+## 7 机器人SLAM与自主巡航
