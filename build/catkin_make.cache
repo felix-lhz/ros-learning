@@ -1,2 +1,2 @@
 learning_communication:learning_tf:mrobot_description
--DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCATKIN_DEVEL_PREFIX=/home/felix/ros-learning/devel -DCMAKE_INSTALL_PREFIX=/home/felix/ros-learning/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/felix/ros-learning/devel -DCMAKE_INSTALL_PREFIX=/home/felix/ros-learning/install -G Unix Makefiles
