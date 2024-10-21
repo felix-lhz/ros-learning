@@ -567,7 +567,167 @@ catkin_make
 
 #### 4.6.2 配置ArbotiX控制器
 
+[arbotix_mrobot_with_camera.launch](src/mrobot_description/launch/arbotix_mrobot_with_camera.launch)
+
+[arbotix_mrobot_with_kinect.launch](src/mrobot_description/launch/arbotix_mrobot_with_kinect.launch)
+
+[arbotix_mrobot_with_laser.launch](src/mrobot_description/launch/arbotix_mrobot_with_laser.launch)
+
+[fake_mrobot_arbotix.yaml](src/mrobot_description/config/fake_mrobot_arbotix.yaml)
+
+### 4.7 ros_controller
+
+#### 4.7.1 Controller Manager
+
+每个机器人可能有多个控制器， 所以这里有一个控制器管理器的概念， 提供一种通用的接口来管理不同的控制器。 控制器管理器的输入就是ROS上层应用功能包的输出。
+
+##### 4.7.1.1 命令行工具
+
+```
+rosrun controller_manager controller_manager <command> <controller_name>
+```
+
+###### 支持的<command>如下： 
+
+- **load：** 加载一个控制器。
+- **unload：** 卸载一个控制器。
+- **start：** 启动控制器。
+- **stop：** 停止控制器。
+- **spawn：** 加载并启动一个控制器。
+- **kill：** 停止并卸载一个控制器。
+
+```查看控制器状态
+rosrun controller_manager controller_manager <command>
+```
+
+###### 支持的<command>如下： 
+
+- **list：** 根据执行顺序列出所有控制器， 并显示每个控制器的状态。
+- **list-types：** 显示所有控制器的类型。
+- **reload-libraries：** 以插件的形式重载所有控制器的库， 不需要重新启动， 方便对控制器的开发和测试。
+- **reload-libraries--restore：** 以插件的形式重载所有控制器的库， 并恢复到初始状态。
+
+```同时控制多个控制器
+rosrun controller_manager spawner [--stopped] name1 name2 name3
+```
+
+上面的命令可以自动加载、 启动控制器， 如果加上--stopped参数，那么控制器则只会被加载， 但是并不会开始运行。 如果想要停止一系列控制器， 但是不需要卸载， 可以使用如下命令：
+
+```
+rosrun controller_manager unspawner name1 name2 name3
+```
+
+##### 4.7.1.2 launch工具
+
+```加载并启动controller  
+<launch>
+    <node pkg="controller_manager" type="spawner" args="controller_name1 controller_name2" />
+</launch>
+```
+
+```只需加载不必启动  
+<launch>
+    <node pkg="controller_manager" type="spawner" args="--stopped controller_name1 controller_name2>
+</launch>
+```
+
+##### 4.7.1.3 rqt_controller_manager  
+
+```
+sudo apt-get install ros-noetic-rqt-controller-manager
+rosrun rqt_controller_manager rqt_controller_manager
+```
+
+#### 4.7.2 Controller
+
+控制器可以完成每个joint的控制， 读取硬件资源接口中的状态， 再发布控制命令， 并且提供PID控制器。  
+
+###### ros_controllers控制器：
+
+- **effort_controllers** 
+- **joint_effort_controller** 
+- **joint_position_controller** 
+- **joint_velocity_controller** 
+- **joint_state_controller** 
+- **joint_state_controller** 
+- **position_controllers** 
+- **joint_position_controller** 
+- **velocity_controllers** 
+- **joint_velocity_controller**  
+
+###### 创建控制器的具体方法wiki：
+
+https://github.com/ros-controls/ros_control/wiki/controller_interface
+
+#### 4.7.3 Hardware Resource
+
+为上下两层提供硬件资源的接口。  
+
+###### 创建接口方法wiki：
+
+https://github.com/ros-controls/ros_control/wiki/hardware_interface
+
+#### 4.7.4 RobotHW
+
+机器人硬件抽象和硬件资源直接打交道， 通过write和read方法完成硬件操作， 这一层也包含关节约束、 力矩转换、 状态转换等功能。  
+
+#### 4.7.5 Real Robot
+
+真实机器人上也需要有自己的嵌入式控制器， 将接收到的命令反映到执行器上， 比如接收到旋转90度的命令后， 就需要让执行器快速、 稳定地旋转90度。  
+
+#### 4.7.6 Transmission
+
+传动系统（Transmission） 可以将机器人的关节指令转换成执行器的控制信号。  
+
+```
+<transmission name="simple_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="foo_joint">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="foo_motor">
+        <mechanicalReduction>50</mechanicalReduction>
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </actuator>
+</transmission>
+```
+
+####  4.7.7 关节约束
+
+关节约束（Joint Limits） 是硬件抽象层中的一部分， 维护一个关节约束的数据结构， 这些约束数据可以从机器人的URDF文件中加载， 也可以在ROS的参数服务器上加载（需要先用YAML配置文件导入ROS参数服务器）。
+
+```URDF
+<joint name="$foo_joint" type="revolute">
+    <!-- other joint description elements -->
+    <!-- Joint limits -->
+    <limit lower="0.0" upper="1.0" effort="10.0" ="5.0" />
+    <!-- Soft limits -->
+    <safety_controller k_position="100" k_velocity="10"
+                soft_lower_limit="0.1" soft_upper_limit="0.9" />
+</joint>
+```
+
+```YAWL
+joint_limits:
+    foo_joint:
+        has_position_limits: true
+        min_position: 0.0
+        max_position: 1.0
+        has_velocity_limits: true
+        max_velocity: 2.0
+        has_acceleration_limits: true
+        max_acceleration: 5.0
+        has_jerk_limits: true
+        max_jerk: 100.0
+        has_effort_limits: truemax_effort: 5.0
+    bar_joint:
+        has_position_limits: false # Continuous joint
+        has_velocity_limits: true
+        max_velocity: 4.0
+```
 
 
 
+### 4.8 gazebo
 
+[Gazebo学习（一）Ubuntu20.04安装ROS+gazebo11+模型库导入（汇总跳转连接+个人安装记录）_gazebo模型库-CSDN博客](https://blog.csdn.net/Jenniehubby/article/details/134780066)

@@ -10,6 +10,12 @@ project(mrobot_description)
 find_package(catkin REQUIRED COMPONENTS
   urdf
   xacro
+  geometry_msgs
+  roscpp
+  rospy
+  gazebo_plugins
+  gazebo_ros
+  gazebo_ros_control
 )
 
 ## System dependencies are found with CMake's conventions
