@@ -731,3 +731,39 @@ joint_limits:
 ### 4.8 gazebo
 
 [Gazebo学习（一）Ubuntu20.04安装ROS+gazebo11+模型库导入（汇总跳转连接+个人安装记录）_gazebo模型库-CSDN博客](https://blog.csdn.net/Jenniehubby/article/details/134780066)
+
+#### 4.8.1 camera仿真
+
+```
+roslaunch mrobot_description view_mrobot_with_camera_gazebo.launch
+rqt_image_view
+/camera/image_raw
+```
+
+#### 4.8.2 Kinect仿真
+
+```
+roslaunch mrobot_description view_mrobot_with_kinect_gazebo.launch
+rosrun rviz rviz
+
+Fixed Frame:camera_frame_optical
+
+add PointCloud2
+Topic:/camera/depth/points
+Unreliable:√
+```
+
+#### 4.8.3 rplidar仿真
+
+```
+roslaunch mrobot_description view_mrobot_with_kinect_gazebo.launch
+rosrun rviz rviz
+
+Fixed Frame:base_footprint
+
+add LaserScan
+Topic:/scan
+```
+
+## 5 机器视觉（machine vision）
+
