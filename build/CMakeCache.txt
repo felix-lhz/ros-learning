@@ -596,11 +596,20 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
+//The directory containing a CMake configuration file for move_base_msgs.
+move_base_msgs_DIR:PATH=/opt/ros/noetic/share/move_base_msgs/cmake
+
 //Value Computed by CMake
 mrobot_description_BINARY_DIR:STATIC=/home/felix/ros-learning/build/mrobot_description
 
 //Value Computed by CMake
 mrobot_description_SOURCE_DIR:STATIC=/home/felix/ros-learning/src/mrobot_description
+
+//Value Computed by CMake
+mrobot_navigation_BINARY_DIR:STATIC=/home/felix/ros-learning/build/mrobot_navigation
+
+//Value Computed by CMake
+mrobot_navigation_SOURCE_DIR:STATIC=/home/felix/ros-learning/src/mrobot_navigation
 
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/noetic/share/nav_msgs/cmake
@@ -727,6 +736,9 @@ urdf_DIR:PATH=/opt/ros/noetic/share/urdf/cmake
 
 //The directory containing a CMake configuration file for visualization_msgs.
 visualization_msgs_DIR:PATH=/opt/ros/noetic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for visulization_msgs.
+visulization_msgs_DIR:PATH=visulization_msgs_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for xacro.
 xacro_DIR:PATH=/opt/ros/noetic/share/xacro/cmake
@@ -882,7 +894,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

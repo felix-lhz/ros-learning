@@ -8,6 +8,7 @@
             "includePath": [
                 "/opt/ros/noetic/include/**",
                 "/home/felix/ros-learning/src/learning_communication/include/**",
+                "/home/felix/ros-learning/src/mrobot_description/",
                 "/usr/include/**"
             ],
             "name": "ROS",

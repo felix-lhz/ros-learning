@@ -71,11 +71,6 @@
 },
 {
   "directory": "/home/felix/ros-learning/build/ar_track_alvar/ar_track_alvar",
-  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ar_track_alvar\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/pcl-1.10 -I/usr/include/vtk-7.1 -I/usr/include/freetype2 -isystem /usr/include/opencv4  -O2 -g -DNDEBUG   -o CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o -c /home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp",
-  "file": "/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp"
-},
-{
-  "directory": "/home/felix/ros-learning/build/ar_track_alvar/ar_track_alvar",
   "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ar_track_alvar\\\" -Dar_track_alvar_EXPORTS -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/pcl-1.10 -I/usr/include/vtk-7.1 -I/usr/include/freetype2 -isystem /usr/include/opencv4  -O2 -g -DNDEBUG -fPIC   -o CMakeFiles/ar_track_alvar.dir/src/Bitset.cpp.o -c /home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp",
   "file": "/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/src/Bitset.cpp"
 },
@@ -231,7 +226,22 @@
 },
 {
   "directory": "/home/felix/ros-learning/build/ar_track_alvar/ar_track_alvar",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ar_track_alvar\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/pcl-1.10 -I/usr/include/vtk-7.1 -I/usr/include/freetype2 -isystem /usr/include/opencv4  -O2 -g -DNDEBUG   -o CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o -c /home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp",
+  "file": "/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/nodes/FindMarkerBundles.cpp"
+},
+{
+  "directory": "/home/felix/ros-learning/build/ar_track_alvar/ar_track_alvar",
   "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"ar_track_alvar\\\" -I/home/felix/ros-learning/devel/include -I/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/pcl-1.10 -I/usr/include/vtk-7.1 -I/usr/include/freetype2 -isystem /usr/include/opencv4  -O2 -g -DNDEBUG   -o CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o -c /home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp",
   "file": "/home/felix/ros-learning/src/ar_track_alvar/ar_track_alvar/nodes/TrainMarkerBundle.cpp"
+},
+{
+  "directory": "/home/felix/ros-learning/build/mrobot_description",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"mrobot_description\\\" -I/home/felix/ros-learning/src/mrobot_description/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -std=c++11 -o CMakeFiles/mrobot_bringup.dir/src/mrobot.cpp.o -c /home/felix/ros-learning/src/mrobot_description/src/mrobot.cpp",
+  "file": "/home/felix/ros-learning/src/mrobot_description/src/mrobot.cpp"
+},
+{
+  "directory": "/home/felix/ros-learning/build/mrobot_description",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"mrobot_description\\\" -I/home/felix/ros-learning/src/mrobot_description/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -O2 -g -DNDEBUG   -std=c++11 -o CMakeFiles/mrobot_bringup.dir/src/mrobot_bringup.cpp.o -c /home/felix/ros-learning/src/mrobot_description/src/mrobot_bringup.cpp",
+  "file": "/home/felix/ros-learning/src/mrobot_description/src/mrobot_bringup.cpp"
 }
 ]

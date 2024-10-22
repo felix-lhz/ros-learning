@@ -7,5 +7,8 @@
         "/opt/ros/noetic/lib/python3/dist-packages",
         "/usr/lib/python3/dist-packages"
     ],
-    "cmake.ignoreCMakeListsMissing": true
+    "cmake.ignoreCMakeListsMissing": true,
+    "files.associations": {
+        "vector": "cpp"
+    }
 }

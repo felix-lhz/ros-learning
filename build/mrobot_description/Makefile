@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+mrobot_description/CMakeFiles/mrobot_bringup.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 mrobot_description/CMakeFiles/mrobot_bringup.dir/rule
+.PHONY : mrobot_description/CMakeFiles/mrobot_bringup.dir/rule
+
+# Convenience name for target.
+mrobot_bringup: mrobot_description/CMakeFiles/mrobot_bringup.dir/rule
+
+.PHONY : mrobot_bringup
+
+# fast build rule for target.
+mrobot_bringup/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/mrobot_bringup.dir/build.make mrobot_description/CMakeFiles/mrobot_bringup.dir/build
+.PHONY : mrobot_bringup/fast
+
+# Convenience name for target.
 mrobot_description/CMakeFiles/control_msgs_generate_messages_py.dir/rule:
 	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 mrobot_description/CMakeFiles/control_msgs_generate_messages_py.dir/rule
 .PHONY : mrobot_description/CMakeFiles/control_msgs_generate_messages_py.dir/rule
@@ -677,6 +692,60 @@ control_toolbox_generate_messages_py/fast:
 	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make mrobot_description/CMakeFiles/control_toolbox_generate_messages_py.dir/build
 .PHONY : control_toolbox_generate_messages_py/fast
 
+src/mrobot.o: src/mrobot.cpp.o
+
+.PHONY : src/mrobot.o
+
+# target to build an object file
+src/mrobot.cpp.o:
+	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/mrobot_bringup.dir/build.make mrobot_description/CMakeFiles/mrobot_bringup.dir/src/mrobot.cpp.o
+.PHONY : src/mrobot.cpp.o
+
+src/mrobot.i: src/mrobot.cpp.i
+
+.PHONY : src/mrobot.i
+
+# target to preprocess a source file
+src/mrobot.cpp.i:
+	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/mrobot_bringup.dir/build.make mrobot_description/CMakeFiles/mrobot_bringup.dir/src/mrobot.cpp.i
+.PHONY : src/mrobot.cpp.i
+
+src/mrobot.s: src/mrobot.cpp.s
+
+.PHONY : src/mrobot.s
+
+# target to generate assembly for a file
+src/mrobot.cpp.s:
+	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/mrobot_bringup.dir/build.make mrobot_description/CMakeFiles/mrobot_bringup.dir/src/mrobot.cpp.s
+.PHONY : src/mrobot.cpp.s
+
+src/mrobot_bringup.o: src/mrobot_bringup.cpp.o
+
+.PHONY : src/mrobot_bringup.o
+
+# target to build an object file
+src/mrobot_bringup.cpp.o:
+	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/mrobot_bringup.dir/build.make mrobot_description/CMakeFiles/mrobot_bringup.dir/src/mrobot_bringup.cpp.o
+.PHONY : src/mrobot_bringup.cpp.o
+
+src/mrobot_bringup.i: src/mrobot_bringup.cpp.i
+
+.PHONY : src/mrobot_bringup.i
+
+# target to preprocess a source file
+src/mrobot_bringup.cpp.i:
+	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/mrobot_bringup.dir/build.make mrobot_description/CMakeFiles/mrobot_bringup.dir/src/mrobot_bringup.cpp.i
+.PHONY : src/mrobot_bringup.cpp.i
+
+src/mrobot_bringup.s: src/mrobot_bringup.cpp.s
+
+.PHONY : src/mrobot_bringup.s
+
+# target to generate assembly for a file
+src/mrobot_bringup.cpp.s:
+	cd /home/felix/ros-learning/build && $(MAKE) -f mrobot_description/CMakeFiles/mrobot_bringup.dir/build.make mrobot_description/CMakeFiles/mrobot_bringup.dir/src/mrobot_bringup.cpp.s
+.PHONY : src/mrobot_bringup.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -686,6 +755,7 @@ help:
 	@echo "... install/strip"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... mrobot_bringup"
 	@echo "... control_msgs_generate_messages_py"
 	@echo "... control_msgs_generate_messages_nodejs"
 	@echo "... gazebo_ros_gencfg"
@@ -724,6 +794,12 @@ help:
 	@echo "... gazebo_msgs_generate_messages_nodejs"
 	@echo "... trajectory_msgs_generate_messages_eus"
 	@echo "... control_toolbox_generate_messages_py"
+	@echo "... src/mrobot.o"
+	@echo "... src/mrobot.i"
+	@echo "... src/mrobot.s"
+	@echo "... src/mrobot_bringup.o"
+	@echo "... src/mrobot_bringup.i"
+	@echo "... src/mrobot_bringup.s"
 .PHONY : help
 
 

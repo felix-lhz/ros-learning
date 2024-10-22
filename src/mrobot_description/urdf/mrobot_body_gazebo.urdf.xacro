@@ -300,6 +300,11 @@
                 <odometryFrame>odom</odometryFrame> 
                 <odometryTopic>odom</odometryTopic> 
                 <robotBaseFrame>base_footprint</robotBaseFrame>
+
+                <!-- add -->
+                <odometrySource>world</odometrySource> 
+                <publishOdomTF>1</publishOdomTF>
+
             </plugin>
         </gazebo> 
 

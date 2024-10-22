@@ -228,51 +228,6 @@ _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_
 .PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test/fast
 
 # Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule
-
-# Convenience name for target.
-run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test: ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule
-
-.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test
-
-# fast build rule for target.
-run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/build
-.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule
-
-# Convenience name for target.
-_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule
-
-.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch
-
-# fast build rule for target.
-_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/build
-.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
-
-# Convenience name for target.
-_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
-
-.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch
-
-# fast build rule for target.
-_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build
-.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast
-
-# Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
 	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/std_srvs_generate_messages_py.dir/rule
@@ -633,6 +588,21 @@ pcl_msgs_generate_messages_eus/fast:
 .PHONY : pcl_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+# Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/bond_generate_messages_lisp.dir/rule:
 	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/bond_generate_messages_lisp.dir/rule
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/bond_generate_messages_lisp.dir/rule
@@ -813,6 +783,21 @@ pcl_msgs_generate_messages_nodejs/fast:
 .PHONY : pcl_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule
+
+# Convenience name for target.
+ar_track_alvar: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule
+
+.PHONY : ar_track_alvar
+
+# fast build rule for target.
+ar_track_alvar/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build
+.PHONY : ar_track_alvar/fast
+
+# Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
 	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
@@ -888,126 +873,6 @@ _run_tests_ar_track_alvar/fast:
 .PHONY : _run_tests_ar_track_alvar/fast
 
 # Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule
-
-# Convenience name for target.
-findMarkerBundles: ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule
-
-.PHONY : findMarkerBundles
-
-# fast build rule for target.
-findMarkerBundles/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/build
-.PHONY : findMarkerBundles/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule
-
-# Convenience name for target.
-ar_track_alvar: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/rule
-
-.PHONY : ar_track_alvar
-
-# fast build rule for target.
-ar_track_alvar/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar.dir/build
-.PHONY : ar_track_alvar/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_eus: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_eus
-
-# fast build rule for target.
-visualization_msgs_generate_messages_eus/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
-.PHONY : visualization_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_lisp: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_lisp
-
-# fast build rule for target.
-visualization_msgs_generate_messages_lisp/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
-.PHONY : visualization_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_nodejs: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
-.PHONY : visualization_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule
-
-# Convenience name for target.
-run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule
-
-.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch
-
-# fast build rule for target.
-run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/build
-.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-topic_tools_generate_messages_cpp: ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
-
-.PHONY : topic_tools_generate_messages_cpp
-
-# fast build rule for target.
-topic_tools_generate_messages_cpp/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
-.PHONY : topic_tools_generate_messages_cpp/fast
-
-# Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-visualization_msgs_generate_messages_py: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
-
-.PHONY : visualization_msgs_generate_messages_py
-
-# fast build rule for target.
-visualization_msgs_generate_messages_py/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
-.PHONY : visualization_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar_gencfg.dir/rule:
 	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar_gencfg.dir/rule
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar_gencfg.dir/rule
@@ -1021,6 +886,21 @@ ar_track_alvar_gencfg: ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar_g
 ar_track_alvar_gencfg/fast:
 	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar_gencfg.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/ar_track_alvar_gencfg.dir/build
 .PHONY : ar_track_alvar_gencfg/fast
+
+# Convenience name for target.
+ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule
+
+# Convenience name for target.
+_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule
+
+.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch
+
+# fast build rule for target.
+_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/build
+.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch/fast
 
 # Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/medianFilter.dir/rule:
@@ -1051,6 +931,21 @@ individualMarkers: ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.di
 individualMarkers/fast:
 	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/individualMarkers.dir/build
 .PHONY : individualMarkers/fast
+
+# Convenience name for target.
+ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule
+
+# Convenience name for target.
+findMarkerBundles: ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/rule
+
+.PHONY : findMarkerBundles
+
+# fast build rule for target.
+findMarkerBundles/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/findMarkerBundles.dir/build
+.PHONY : findMarkerBundles/fast
 
 # Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch.dir/rule:
@@ -1113,21 +1008,6 @@ run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_a
 .PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-basic.test/fast
 
 # Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
-
-# Convenience name for target.
-run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
-
-.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch
-
-# fast build rule for target.
-run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build
-.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast
-
-# Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule:
 	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
 .PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/nodelet_topic_tools_gencfg.dir/rule
@@ -1143,19 +1023,19 @@ nodelet_topic_tools_gencfg/fast:
 .PHONY : nodelet_topic_tools_gencfg/fast
 
 # Convenience name for target.
-ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
-.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
 
 # Convenience name for target.
-visualization_msgs_generate_messages_cpp: ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
 
-.PHONY : visualization_msgs_generate_messages_cpp
+.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch
 
 # fast build rule for target.
-visualization_msgs_generate_messages_cpp/fast:
-	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
-.PHONY : visualization_msgs_generate_messages_cpp/fast
+run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build
+.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast
 
 # Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/rule:
@@ -1171,6 +1051,21 @@ clean_test_results_ar_track_alvar: ar_track_alvar/ar_track_alvar/CMakeFiles/clea
 clean_test_results_ar_track_alvar/fast:
 	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/clean_test_results_ar_track_alvar.dir/build
 .PHONY : clean_test_results_ar_track_alvar/fast
+
+# Convenience name for target.
+ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule
+
+# Convenience name for target.
+run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/rule
+
+.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch
+
+# fast build rule for target.
+run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch.dir/build
+.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch/fast
 
 # Convenience name for target.
 ar_track_alvar/ar_track_alvar/CMakeFiles/trainMarkerBundle.dir/rule:
@@ -1231,6 +1126,36 @@ _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_
 _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv.launch/fast:
 	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv.launch.dir/build
 .PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv.launch/fast
+
+# Convenience name for target.
+ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
+
+# Convenience name for target.
+_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch: ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/rule
+
+.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch
+
+# fast build rule for target.
+_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/_run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch.dir/build
+.PHONY : _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch/fast
+
+# Convenience name for target.
+ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule:
+	cd /home/felix/ros-learning/build && $(MAKE) -f CMakeFiles/Makefile2 ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule
+.PHONY : ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule
+
+# Convenience name for target.
+run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test: ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/rule
+
+.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test
+
+# fast build rule for target.
+run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test/fast:
+	cd /home/felix/ros-learning/build && $(MAKE) -f ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/build.make ar_track_alvar/ar_track_alvar/CMakeFiles/run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test.dir/build
+.PHONY : run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test/fast
 
 nodes/FindMarkerBundles.o: nodes/FindMarkerBundles.cpp.o
 
@@ -2247,9 +2172,6 @@ help:
 	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-full.test"
 	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-basic.test"
 	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test"
-	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test"
-	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch"
-	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... kinect_filtering"
 	@echo "... std_srvs_generate_messages_eus"
@@ -2274,6 +2196,7 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... _run_tests_ar_track_alvar_roslaunch-check"
 	@echo "... pcl_msgs_generate_messages_eus"
+	@echo "... topic_tools_generate_messages_cpp"
 	@echo "... bond_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... nodelet_generate_messages_py"
@@ -2287,34 +2210,31 @@ help:
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... pcl_msgs_generate_messages_nodejs"
+	@echo "... ar_track_alvar"
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... run_tests_ar_track_alvar_roslaunch-check"
 	@echo "... topic_tools_generate_messages_nodejs"
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... _run_tests_ar_track_alvar"
-	@echo "... findMarkerBundles"
-	@echo "... ar_track_alvar"
-	@echo "... visualization_msgs_generate_messages_eus"
-	@echo "... visualization_msgs_generate_messages_lisp"
-	@echo "... visualization_msgs_generate_messages_nodejs"
-	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch"
-	@echo "... topic_tools_generate_messages_cpp"
-	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... ar_track_alvar_gencfg"
+	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch"
 	@echo "... medianFilter"
 	@echo "... individualMarkers"
+	@echo "... findMarkerBundles"
 	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_train.launch"
 	@echo "... run_tests_ar_track_alvar"
 	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle.launch"
 	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_param_config-basic.test"
-	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch"
 	@echo "... nodelet_topic_tools_gencfg"
-	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch"
 	@echo "... clean_test_results_ar_track_alvar"
+	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch"
 	@echo "... trainMarkerBundle"
 	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_bundle_no_kinect.launch"
 	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv.launch"
 	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv.launch"
+	@echo "... _run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_launch_pr2_indiv_no_kinect.launch"
+	@echo "... run_tests_ar_track_alvar_roslaunch-check__home_felix_ros-learning_src_ar_track_alvar_ar_track_alvar_test_marker_arg_config-basic.test"
 	@echo "... nodes/FindMarkerBundles.o"
 	@echo "... nodes/FindMarkerBundles.i"
 	@echo "... nodes/FindMarkerBundles.s"
