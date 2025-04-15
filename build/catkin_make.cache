@@ -1,2 +1,0 @@
-learning_communication:learning_tf:mrobot_description:mrobot_navigation:robot_vision
--DCATKIN_DEVEL_PREFIX=/home/felix/ros-learning/devel -DCMAKE_INSTALL_PREFIX=/home/felix/ros-learning/install -G Unix Makefiles

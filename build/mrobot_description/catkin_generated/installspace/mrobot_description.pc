@@ -1,8 +1,0 @@
-prefix=/home/felix/ros-learning/install
-
-Name: mrobot_description
-Description: Description of mrobot_description
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: 
